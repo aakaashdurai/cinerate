@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+    <title>Login & Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #070707;
+        }
+        .container3 {
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #fafbf9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .input-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4cf236;
+            color: #fff;
+            cursor: pointer;
+        }
+        .input-group button:hover {
+            background-color: #5efa04;
+        }
+        .input-group p {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1 class="logo">CineRate</h1>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li><a href="index.html" class="menu-list-item active">HOME</a></li>
+                    </ul>
+                </div>  
+                            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>          
+        </div>
+        <div class="sidebar">
+            <a href="#" ><i class="left-menu-icon fa fa-search"></i></a>
+            <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+            <a href="#" ><i class="left-menu-icon fa fa-film"></i></a>
+            <a href="#" ><i class="left-menu-icon fa fa-tv"></i></a>
+            <a href="login.html" ><i class="left-menu-icon fa fa-bookmark"></i></a>
+            <a href="#" ><i class="left-menu-icon fa fa-user"></i></a>
+        </div>
+        <div class="container3">
+            <div class="header">
+                <h2>Login & Registration</h2>
+            </div>
+            <form id="loginForm" action="login.php" method="post">
+            <div class="input-group">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit" name="login">Login</button>
+            </div>
+            <p>Don't have an account? <a href="#" id="toggleRegister">Register</a></p>
+        </form>
+
+        <form id="registrationForm" action="login.php" method="post" class="hidden">
+            <div class="input-group">
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit" name="register">Register</button>
+            </div>
+            <p>Already have an account? <a href="#" id="toggleLogin">Login</a></p>
+        </form>
+    </div>
+
+    <footer>
+        <h1 class="logo">CineRate</h1>
+    <div class="footer1 ">
+      Connect with us at <br><br>
+      <div class="social-media">
+        <a href="index.html"><i class="left-menu-icon fab fa-facebook-f"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-linkedin"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-twitter"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-instagram"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-youtube"></i></a>
+      </div>
+    </div>
+</footer>
+<div style="background-color: #000000; color: #fff; text-align: center; padding: 10px;">© 2023 cinerate.com. All rights reserved.</div>
+    <script src="app.js"></script>
+
+    <script>
+        document.getElementById('toggleRegister').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('loginForm').classList.add('hidden');
+            document.getElementById('registrationForm').classList.remove('hidden');
+        });
+
+        document.getElementById('toggleLogin').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('registrationForm').classList.add('hidden');
+            document.getElementById('loginForm').classList.remove('hidden');
+        });
+
+    </script>
+</body>
+</html>

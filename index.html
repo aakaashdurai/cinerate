@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>cinerate.com</title>
+</head>
+<body>
+<div>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">CineRate</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-list-item active">HOME</a></li>
+                    <li class="submenu">
+                        <a href="#" class="menu-list-item active">LANGUALE</a>
+                        <ul class="submenu-list">
+                            <li><a href="/Catagory/tamil.html">TAMIL</a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">MALAYALAM</a></li>
+                            <li><a href="#">KANNADAM</a></li>
+                            <li><a href="#">HINDI</a></li>
+                            <li><a href="#">TELUGU</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#" class="menu-list-item active">MOVIES</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">ACTION</a></li>
+                            <li><a href="#">COMEDY</a></li>
+                            <li><a href="#">DRAMA</a></li>
+                            <li><a href="#">THRILLER</a></li>
+                            <li><a href="#">SCI-FI</a></li>
+                            <li><a href="#">FANTACY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-list-item active">TOP50Flim</a></li>
+                    <li><a href="wl.html" class="menu-list-item active">WATCHLIST</a></li>
+                    <li><a href="about.html" class="menu-list-item active">ABOUT</a></li>
+                    <li class="search-container">
+                        <input type="text" class="search-bar" placeholder="Search">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+            </div>            
+            <div><img class="profile-picture" src="img/profile.png" alt=""></div>
+            <div class="profile-container" onclick="window.location.href = 'login.html';">
+                <button class="profile-text-container">
+                    <span class="profile-text">SIGN IN</span>
+                </button>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#" ><i class="left-menu-icon fa fa-search"></i></a>
+        <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-film"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-tv"></i></a>
+        <a href="login.html" ><i class="left-menu-icon fa fa-bookmark"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-user"></i></a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <h1 class="featured-title">THE GREATEST OF ALL TIME</h1>
+                <button class="featured-button">Upcoming</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <button onclick="window.location.href = 'tamil.html';" class="tamil-button">View More</button>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">LOVER</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Arun and Divya's six-year relationship starts unraveling as they drift apart, raising the question of whether love can withstand such differences.</p>
+                            <a href="wl.html?movieTitle=LOVER" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'review.php';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">BLUE STAR</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">The cricket captains of Arakkonam, Ranjith and Rajesh, ignite a rivalry that ruins their chances of playing when politics interferes.</p>
+                            <a href="wl.html?movieTitle=BLUE STAR" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">CAPTAIN MILLER</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Directed by Arun Matheswaran. With Dhanush, John Kokken, Antony, Sundeep Kishan. A man leaves and turns against the British-led Indian.</p>
+                            <a href="wl.html?movieTitle=CAPTAIN MILLER" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">AYALAAN</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Quirky and witty sci fi movie with a great pinch of message for humans to protect and safeguard the earth. Director Ravi Kumar has shown this simple.</p>
+                            <a href="wl.html?movieTitle=AYALAAN" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">LAL SALAAM</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A reckless townsman tries to mend his thug ways ends up resurrecting himself and proves to be worthy of the world, in the eyes of the same people who chased him.</p>
+                            <a href="wl.html?movieTitle=LAL SALAAM" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">SINGAPORE SALOON</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Directed by Gokul. With Lokesh Kanagaraj, Meenaakshi Chaudhary, Sathyaraj, Jiiva. A young hairstylist who has a lot of dreams.</p>
+                            <a href="wl.html?movieTitle=SINGAPORE SALOON" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">MISSION CHAPTER 1</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc"> Chapter 1: Directed by A.L. Vijay. With Arun Vijay, Amy Jackson, Nimisha Sajayan, Abi Hassan. A father takes his daughter to UK for treatment.</p>
+                            <a href="wl.html?movieTitle=MISSION CHAPTER 1" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
+                            <span class="movie-list-item-title">Manjummel Boys</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A group of friends get into a daring rescue mission to save their friend from Guna Caves, a perilously deep pit from where nobody has ever been brought back.</p>
+                            <a href="wl.html?movieTitle=Manjummel Boys" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                            <span class="movie-list-item-title">Premalu</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Sachin pursues romance but finds himself caught between two potential partners, leading to amusing complications.</p>
+                            <a href="wl.html?movieTitle=Manjummel Boys" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                            <span class="movie-list-item-title">Bramayugam</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Thevan, a folk singer of the Paanan caste, has a fateful encounter when escaping slavery, leading to discover an ancient tradition altering his destiny.</p>
+                            <a href="wl.html?movieTitle=Bramayugam" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                            <span class="movie-list-item-title">Anweshippin Kandethum</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Revolves around two major crimes that shook kerala and the subsequent inquiry into the cases by sop.</p>
+                            <a href="wl.html?movieTitle=Anweshippin Kandethum" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">Malaikottai Vaaliban</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Journey of Malaikottai Vaaliban, an undisputed warrior, transcends time and geographies, triumphing over every opponent he encounters.</p>
+                            <a href="wl.html?movieTitle=Malaikottai Vaaliban" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/13.jpg" alt="">
+                            <span class="movie-list-item-title">Abraham Ozler</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Revolves around the personal and professional lives of veteran cop Abraham Ozler, ACP Trichur, who at one time has to take up a serial killing case and the mysterious hunt begins.</p>
+                            <a href="wl.html?movieTitle=Abraham Ozler" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpg" alt="">
+                            <span class="movie-list-item-title">Mission: Chapter 1</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">An Indian man is locked in prison while his daughter needs an operation. He manages to escape during a riot and is chased by the jailer.</p>
+                            <a href="wl.html?movieTitle=Mission: Chapter 1" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <h1 class="featured-title">DEADPOOL AND WOLVERINE</h1>
+                <button class="featured-button">Upcoming</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP RATED MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
+                            <span class="movie-list-item-title">The Shawshank Redemption</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.</p>
+                            <a href="wl.html?movieTitle=The Shawshank Redemption" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/16.jpg" alt="">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+                            <a href="wl.html?movieTitle=The Godfather" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                            <span class="movie-list-item-title">The Dark Knight</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+                            <a href="wl.html?movieTitle=The Dark Knight" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                            <span class="movie-list-item-title">Inception</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster</p>
+                            <a href="wl.html?movieTitle=Inception" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
+                            <span class="movie-list-item-title">The Matrix</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.</p>
+                            <a href="wl.html?movieTitle=The Matrix" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/20.jpg" alt="">
+                            <span class="movie-list-item-title">Interstellar</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+                            <a href="wl.html?movieTitle=Interstellar" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/21.jpg" alt="">
+                            <span class="movie-list-item-title">The Prestige</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">After a tragic accident, two stage magicians in 1890s London engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.</p>
+                            <a href="wl.html?movieTitle=The Prestige" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">2023 MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/22.jpg" alt="">
+                            <span class="movie-list-item-title">Leo</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Parthiban is a mild-mannered cafe owner in Kashmir, who fends off a gang of murderous thugs and gains attention from a drug cartel claiming he was once a part of them.</p>
+                            <a href="wl.html?movieTitle=Leo" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/23.jpg" alt="">
+                            <span class="movie-list-item-title">Jigarthanda Double X</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">In 1975, a filmmaker agrees to collaborate on a film with a gangster who wishes to become a famous actor.</p>
+                            <a href="wl.html?movieTitle=Jigarthanda Double X" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/24.jpg" alt="">
+                            <span class="movie-list-item-title">Jailer</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A retired jailer goes on a manhunt to find his son's killers. But the road leads him to a familiar, albeit a bit darker place. Can he emerge from this complex situation successfully?</p>
+                            <a href="wl.html?movieTitle=Jailer" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/25.jpeg" alt="">
+                            <span class="movie-list-item-title">Mark Antony</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Two gangsters, Mark and Antony acquire a mobile phone that has the ability to time travel.</p>
+                            <a href="wl.html?movieTitle=Mark Antony" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/26.jpg" alt="">
+                            <span class="movie-list-item-title">Por Thozhil</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A bright but faint-hearted rookie cop has to overcome his fears in order to succeed in his first case which sees him partnered with a reclusive senior officer to catch a serial killer on the loose.</p>
+                            <a href="wl.html?movieTitle=Por Thozhil" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/27.jpg" alt="">
+                            <span class="movie-list-item-title">Dada</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A couple in love, accidentally become teenage parents. Unpleasant situations make them fall apart. Manikandan, left alone with his son, struggles as a single teenage father. Fate owns him, bringing Sindhu back into his life.</p>
+                            <a href="wl.html?movieTitle=Dada" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/28.jpg" alt="">
+                            <span class="movie-list-item-title">Good night</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A simple boy-next-door whose biggest problem in life is his snoring, falls in love with a girl. Follow how the couple overcome his sleeping problem while living together.</p>
+                            <a href="wl.html?movieTitle=Good night" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+                </div>
+            </div>
+            <div class="movie-list-container2">
+                <h1 class="movie-list-title">WEB SERIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/29.jpeg" alt="">
+                            <span class="movie-list-item-title">Heart Beat</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">RK Multispeciality Hospital is a beacon of hope and healing. Its doctors are resilient even when they have to deal with medical and personal challenges.</p>
+                            <a href="wl.html?movieTitle=Heart Beat" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/30.jpg" alt="">
+                            <span class="movie-list-item-title">Koose Munisamy Veerappan</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">
+                                The series explores the life of Veerappan and the people involved in the hunt for the infamous bandit. It showcases interviews with Veerappan, journalists, politicians and the victims’ families.</p>
+                            <a href="wl.html?movieTitle=Koose Munisamy Veerappan" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/31.jpg" alt="">
+                            <span class="movie-list-item-title">Suzhal</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">The Vortex is an upcoming Amazon Prime Original series starring Aishwarya Rajesh, Kathir, R. Parthiban, Sriya Reddy in lead roles. Created by Pushkar and Gayatri. Directed by Bramma, Anucharan.</p>
+                            <a href="wl.html?movieTitle=Suzhal" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/35.jpg" alt="">
+                            <span class="movie-list-item-title">Mathagam</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Set over an interval of 30 hours, this intense story narrates the tale of an intense overnight invasion, that forced the law enforcement system to work and try to dismantle a criminal enterprise.</p>
+                            <a href="wl.html?movieTitle=Mathagam" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/33.jpg" alt="">
+                            <span class="movie-list-item-title">Vilangu</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <a href="wl.html?movieTitle=Vilangu" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/36.jpg" alt="">
+                            <span class="movie-list-item-title">Kana Kaanum Kaalangal</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <a href="wl.html?movieTitle=Good night" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/34.jpg" alt="">
+                            <span class="movie-list-item-title">Sweet Kaaram Coffee</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">follows the story of three women living in the same house but having a generation gap. In this world, women are bound by a lot of things and people but in this movie they put themselves ahead of the people they are bound by.</p>
+                            <a href="wl.html?movieTitle=Sweet Kaaram Coffee" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+    </div>
+</div>
+<footer>
+        <h1 class="logo">CineRate</h1>
+    <div class="footer1 ">
+      Connect with us at <br><br>
+      <div class="social-media">
+        <a href="index.html"><i class="left-menu-icon fab fa-facebook-f"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-linkedin"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-twitter"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-instagram"></i></a>
+        <a href="index.html"><i class="left-menu-icon fab fa-youtube"></i></a>
+      </div>
+    </div>
+</footer>
+<div style="background-color: #000000; color: #fff; text-align: center; padding: 10px;">© 2023 cinerate.com. All rights reserved.</div>
+    <script src="app.js"></script>
+</body>
+</html>

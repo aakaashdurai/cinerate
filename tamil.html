@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>tamilmovies.com</title>
+</head>
+<style>
+    .tamilbutton{
+    display: flex;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Sen", sans-serif;
+    background-color: #43f724;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    }
+</style>
+<body>
+<div>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">CineRate</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html" class="menu-list-item active">HOME</a></li>
+                    <li class="submenu">
+                        <a href="#" class="menu-list-item active">LANGUALE</a>
+                        <ul class="submenu-list">
+                            <li><a href="tamil.html">TAMIL</a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">MALAYALAM</a></li>
+                            <li><a href="#">KANNADAM</a></li>
+                            <li><a href="#">HINDI</a></li>
+                            <li><a href="#">TELUGU</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#" class="menu-list-item active">MOVIES</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">ACTION</a></li>
+                            <li><a href="#">COMEDY</a></li>
+                            <li><a href="#">DRAMA</a></li>
+                            <li><a href="#">THRILLER</a></li>
+                            <li><a href="#">SCI-FI</a></li>
+                            <li><a href="#">FANTACY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-list-item active">TOP50Flim</a></li>
+                    <li><a href="wl.html" class="menu-list-item active">WATCHLIST</a></li>
+                    <li><a href="#" class="menu-list-item active">ABOUT</a></li>
+                    <li class="search-container">
+                        <input type="text" class="search-bar" placeholder="Search">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+            </div>            
+            <div><img class="profile-picture" src="img/profile.png" alt=""></div>
+            <div class="profile-container" onclick="window.location.href = 'login.html';">
+                <button class="profile-text-container">
+                    <span class="profile-text">SIGN IN</span>
+                </button>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#" ><i class="left-menu-icon fa fa-search"></i></a>
+        <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-film"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-tv"></i></a>
+        <a href="login.html" ><i class="left-menu-icon fa fa-bookmark"></i></a>
+        <a href="#" ><i class="left-menu-icon fa fa-user"></i></a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">LOVER</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Arun and Divya's six-year relationship starts unraveling as they drift apart, raising the question of whether love can withstand such differences.</p>
+                            <a href="wl.html?movieTitle=LOVER" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'review.php';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">BLUE STAR</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">The cricket captains of Arakkonam, Ranjith and Rajesh, ignite a rivalry that ruins their chances of playing when politics interferes.</p>
+                            <a href="wl.html" id="watchlist" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">CAPTAIN MILLER</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Directed by Arun Matheswaran. With Dhanush, John Kokken, Antony, Sundeep Kishan. A man leaves and turns against the British-led Indian.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">AYALAAN</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Quirky and witty sci fi movie with a great pinch of message for humans to protect and safeguard the earth. Director Ravi Kumar has shown this simple.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">LAL SALAAM</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">A reckless townsman tries to mend his thug ways ends up resurrecting himself and proves to be worthy of the world, in the eyes of the same people who chased him.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">SINGAPORE SALOON</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Directed by Gokul. With Lokesh Kanagaraj, Meenaakshi Chaudhary, Sathyaraj, Jiiva. A young hairstylist who has a lot of dreams.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">SABA NAYAGAN</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc"> Chapter 1: Directed by A.L. Vijay. With Arun Vijay, Amy Jackson, Nimisha Sajayan, Abi Hassan. A father takes his daughter to UK for treatment.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpg" alt="">
+                            <span class="movie-list-item-title">MISSION CHAPTER 1</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc"> Chapter 1: Directed by A.L. Vijay. With Arun Vijay, Amy Jackson, Nimisha Sajayan, Abi Hassan. A father takes his daughter to UK for treatment.</p>
+                            <a href="login.html" class="wl-ribbon-poster"></a>
+                            <button onclick="window.location.href = 'next_page.html';" class="movie-list-item-button">Reviews</button>
+                        </div>
+                    </div>
+                    <button class="tamilbutton">View More</button>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/22.jpg" alt="">
+                            <span class="movie-list-item-title">LEO</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/23.jpg" alt="">
+                            <span class="movie-list-item-title">JIGARTHANDA DOUBLE X</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/24.jpg" alt="">
+                            <span class="movie-list-item-title">JAILER</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/25.jpeg" alt="">
+                            <span class="movie-list-item-title">MARK ANTONY</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/26.jpg" alt="">
+                            <span class="movie-list-item-title">POR THOZHIL</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/27.jpg" alt="">
+                            <span class="movie-list-item-title">DADA</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/28.jpg" alt="">
+                            <span class="movie-list-item-title">GOOD NIGHT</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/38.jpg" alt="">
+                            <span class="movie-list-item-title">PARKING</span>
+                            <i class="fas fa-star"> 3.0</i>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <button class="tamilbutton">View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
